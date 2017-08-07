@@ -1,5 +1,5 @@
-## 常用函数及成员变量
-#### numpy.shape
+# 常用函数及成员变量
+## numpy.shape
 函数形式为
 
 ```
@@ -36,7 +36,7 @@ numpy也有shape函数，与shape变量结果一致
 (3,)
 ```
 
-#### enumerate和numpy.ndenumerate
+## enumerate和numpy.ndenumerate
 函数形式为
 
 ```
@@ -79,7 +79,7 @@ numpy.ndenumerate用法与enumerate类似，但是无法指定索引起始值。
 (1, 1) 4
 ```
 
-#### numpy.flatnonzero
+## numpy.flatnonzero
 函数形式为
 
 ```
@@ -97,7 +97,7 @@ numpy.flatnonzero(a)
 [0 1 3 4 5 6 7 9]
 ```
 
-#### numpy.random.choice
+## numpy.random.choice
 函数形式为
 
 ```
@@ -113,7 +113,7 @@ array(['pooh', 'pooh', 'pooh', 'Christopher', 'piglet'],
       dtype='|S11')
 ```
 
-#### numpy.reshape
+## numpy.reshape
 函数形式为
 
 ```
@@ -127,7 +127,7 @@ numpy.reshape(a, newshape, order='C')
 >>>X_train = np.reshape(X_train, (X_train.shape[0], -1))
 ```
 
-#### numpy.array_split
+## numpy.array_split
 函数形式为
 
 ```
@@ -142,7 +142,7 @@ numpy.array_split(ary, indices_or_sections, axis=0)
 [array([1, 2]), array([3, 4]), array([5, 6]), array([7])]
 ```
 
-#### numpy.argmax和numpy.argsort
+## numpy.argmax和numpy.argsort
 函数形式为
 
 ```
