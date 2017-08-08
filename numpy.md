@@ -165,3 +165,28 @@ array([1, 2, 3])
 >>> x[np.argsort(-x)]
 array([3, 2, 1])
 ```
+
+## numpy.vstack
+
+函数形式为
+
+```
+numpy.vstack(tup)
+```
+
+作用为垂直组合多个数组
+
+```
+>>>X_train = np.array([[1,2],[3,4],[5,6]])
+>>>X_train_folds = np.array_split(X_train,3)
+>>>for i in xrange(3):
+···    X_train_ = np.vstack(X_train_folds[0:i]+X_train_folds[i+1:])
+···    print X_train_
+[[3 4]
+ [5 6]]
+[[1 2]
+ [5 6]]
+[[1 2]
+ [3 4]]
+```
+

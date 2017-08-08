@@ -20,3 +20,19 @@ for i in xrange(num_test):
     for j in xrange(num_train):
         dists[i][j] = np.sqrt(np.sum(np.square(X[i]-self.X_train[j])))
 ```
+
+## 交叉验证分组
+
+```
+>>>X_train = np.array([[1,2],[3,4],[5,6]])
+>>>X_train_folds = np.array_split(X_train,3)
+>>>for i in xrange(3):
+···    X_train_ = np.vstack(X_train_folds[0:i]+X_train_folds[i+1:])
+···    print X_train_
+[[3 4]
+ [5 6]]
+[[1 2]
+ [5 6]]
+[[1 2]
+ [3 4]]
+```
